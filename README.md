@@ -40,30 +40,30 @@ Button button = new Button("Click me", event -> {
 ```
 
 And here some test: 
-..* Monitor 17": @1920x1080 - Chrome browser: 
-...Font metrics: width: 14px; height: 22px
-...Viewport size: width: 1920px; height: 978px
-...Font/Viewport relation: width: 137fw; height: 44fh
+* Monitor 17": @1920x1080 - Chrome browser:<p> 
+  - Font metrics: width: 14px; height: 22px<p>
+  - Viewport size: width: 1920px; height: 978px<p>
+  - Font/Viewport relation: width: 137fw; height: 44fh<p>
 
-..* Monitor 17": @1920x1080 - Chrome browser with 125% zoom: 
-...Font metrics: width: 14px; height: 22px
-...Viewport size: width: 1536px; height: 782px
-...Font/Viewport relation: width: 109fw; height: 35fh
+* Monitor 17": @1920x1080 - Chrome browser with 125% zoom: 
+  - Font metrics: width: 14px; height: 22px
+  - Viewport size: width: 1536px; height: 782px
+  - Font/Viewport relation: width: 109fw; height: 35fh
 
-..* Samsung Galaxy Note 4 5.7": Portrait @1440 x 2560 - Firefox browser:
-...Font metrics: width: 14px; height: 22px
-...Viewport size: width: 360px; height: 560px
-...Font/Viewport relation: width: 25fw; height: 25fh
+* Samsung Galaxy Note 4 5.7": Portrait @1440 x 2560 - Firefox browser:
+  - Font metrics: width: 14px; height: 22px
+  - Viewport size: width: 360px; height: 560px
+  - Font/Viewport relation: width: 25fw; height: 25fh
 
-..* Samsung Galaxy J7 Prime 5.5": Portrait @1080 x 1920 - Chrome browser:
-...Font metrics: width: 14px; height: 22px
-...Viewport size: width: 360px; height: 560px
-...Font/Viewport relation: width: 25fw; height: 25fh
+* Samsung Galaxy J7 Prime 5.5": Portrait @1080 x 1920 - Chrome browser:
+  - Font metrics: width: 14px; height: 22px
+  - Viewport size: width: 360px; height: 560px
+  - Font/Viewport relation: width: 25fw; height: 25fh
 
-..* LG K10 5.3": Portrait @720 x 1280 - Firefox browser:
-...Font metrics: width: 14px; height: 22px
-...Viewport size: width: 360px; height: 512px
-...Font/Viewport relation: width: 25fw; height: 23fh
+* LG K10 5.3": Portrait @720 x 1280 - Firefox browser:
+  - Font metrics: width: 14px; height: 22px
+  - Viewport size: width: 360px; height: 512px
+  - Font/Viewport relation: width: 25fw; height: 23fh
 
 Since the ruler is affected for the zoom, you can use the proportion to fit or update your component acording to what you need.
 
