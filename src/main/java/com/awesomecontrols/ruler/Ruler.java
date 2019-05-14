@@ -27,8 +27,8 @@ public class Ruler extends Component {
     }
     
     /**
-     * Get the display DPI
-     * @param resume 
+     * Get the font metrics
+     * @param resume is the callback function
      */
     public void measureFontMetrics(IOnMeasureResume resume) {
         this.fontResume = resume;
@@ -43,8 +43,8 @@ public class Ruler extends Component {
     }
     
     /**
-     * Get the viewport size in pixels
-     * @param resume 
+     * Get the current viewport size in pixels
+     * @param resume is the callback function
      */
     public void measureViewport(IOnMeasureResume resume) {
         this.viewportResume = resume;
@@ -59,8 +59,8 @@ public class Ruler extends Component {
     }
     
     /**
-     * Get the viewport size in inches
-     * @param resume 
+     * Get the viewport proportion factor
+     * @param resume is the callback function
      */
     public void measureViewportMetrics(IOnMeasureResume resume) {
         this.viewportResumeMetrics = resume;
