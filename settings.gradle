@@ -1,0 +1,3 @@
+rootProject.name = 'flowruler'
+enableFeaturePreview('IMPROVED_POM_SUPPORT')
+
