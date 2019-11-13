@@ -3,12 +3,20 @@ package com.awesomecontrols.ruler;
 import com.vaadin.flow.component.ClientCallable;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Tag;
-import com.vaadin.flow.component.dependency.HtmlImport;
+import com.vaadin.flow.component.dependency.JsModule;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @Tag("flow-ruler")
-@HtmlImport("bower_components/ruler/flow-ruler.html")
+@JsModule("./ruler/flow-ruler.js")
 public class Ruler extends Component {
-
+    private final static Logger LOGGER = Logger.getLogger(Ruler.class .getName());
+    static {
+        if (LOGGER.getLevel() == null) {
+            LOGGER.setLevel(Level.FINER);
+        }
+    }
+    
     int fontHeight;
     int fontWidth;
     
@@ -23,7 +31,7 @@ public class Ruler extends Component {
     IOnMeasureResume viewportResumeMetrics;
     
     public Ruler() {
-        
+        LOGGER.log(Level.FINER, "Flow 14.+ Ruler!");
     }
     
     /**
