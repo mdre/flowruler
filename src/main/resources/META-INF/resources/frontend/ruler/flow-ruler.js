@@ -1,7 +1,6 @@
-import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';
-import 'ruler/ruler-stuffs.js';
+import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import { devicePixelRatio2, getPixelRatio } from '@vaadin/flow-frontend/ruler/ruler-stuffs.js';
 
- 
 /**
  * `Ruler`
  * A ruler element
@@ -10,23 +9,13 @@ import 'ruler/ruler-stuffs.js';
  * @polymer
  */
 class FlowRuler extends PolymerElement {
-    
-     
-    constructor() {
-        super();
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET","ruler/template.html",false);
-        xmlhttp.send(null);
-        this.fileContent = xmlhttp.responseText;
-        console.log(this.fileContent);
-    }
-    
+
     static get is() {
         return 'flow-ruler';
     }
 
     static get template() {
-        return html`
+        return html `
             <style>
                 .defaultFont {
                     /*z-index: 10000;*/
@@ -78,7 +67,7 @@ class FlowRuler extends PolymerElement {
         rulerElement.className = 'defaultFont';
         var width = rulerElement.offsetWidth;
         var height = rulerElement.offsetHeight;
-        console.log("defaultFont: ",height,width);
+        console.log("defaultFont: ", height, width);
 
         this.$server.updateFontMetrics(width, height);
     }
@@ -88,11 +77,13 @@ class FlowRuler extends PolymerElement {
         rulerElement.className = 'viewport';
         var height = rulerElement.offsetHeight;
         var width = rulerElement.offsetWidth;
-        console.log(height,width);
-        
+        console.log(height, width);
+
+
+        console.log(devicePixelRatio2);
         var dpr = devicePixelRatio2();
         console.log(dpr);
-        
+
         this.$server.updateViewport(width, height);
     }
 
@@ -120,4 +111,3 @@ class FlowRuler extends PolymerElement {
 };
 
 customElements.define(FlowRuler.is, FlowRuler);
-    
